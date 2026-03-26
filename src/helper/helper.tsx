@@ -14,7 +14,9 @@ function validateCoordinate(coordinate : string, range : number) {
 
 function validateDirection(direction : string) {
     let errorMessage = '';
-     
+    if (!Object.values(Directions).includes(direction)) {
+        errorMessage = 'The provided Direction is invalid.';
+    }
 
     return errorMessage;
 }
