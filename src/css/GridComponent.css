@@ -1,0 +1,14 @@
+.grid-container {
+  margin-bottom: 1rem;
+}
+
+.grid {
+  place-items: center;
+}
+
+.grid-content {
+  width: 50%;
+  aspect-ratio: 1;
+  align-content: center;
+  text-align: center;
+}
