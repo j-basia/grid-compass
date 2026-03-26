@@ -22,21 +22,15 @@ const AlertComponent = ({
     showAlertComponent = false,
     onClose
  }: AlertComponentProps) => {
-    const [showAlert, setShowAlert] = useState(showAlertComponent);
-
-    useEffect(() => {
-        setShowAlert(showAlertComponent);
-    }, [showAlertComponent])
 
     const handleClose = () => {
-        setShowAlert(false);
         onClose(false);
     };
 
     return (
         <>
             <Snackbar
-                open={showAlert}
+                open={showAlertComponent}
                 onClose={handleClose}
                 autoHideDuration={5000}
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}>
